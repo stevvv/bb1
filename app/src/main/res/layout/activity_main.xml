@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/reg"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.stevvv.bb1.MainActivity">
+
+
+
+
+    <TextView
+        android:text="SIGN UP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:text="CREATE YOUR ACCOUNT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:fontFamily="sans-serif-condensed" />
+
+    <ScrollView
+        android:paddingTop="90dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <EditText
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/editname"
+        android:hint="Full Name"
+        android:padding="10dp"
+        android:paddingStart="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="0dp"
+        android:accessibilityLiveRegion="polite"
+        android:editable="false"
+        android:forceHasOverlappingRendering="false"
+        android:width="0dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="?attr/actionMenuTextColor"
+        android:layout_width="320dp"
+        style="@style/Widget.AppCompat.EditText"
+        android:selectAllOnFocus="false" />
+
+
+            <EditText
+                android:textStyle="bold"
+                android:hint="Date Of Birth"
+                android:id="@+id/bdate"
+
+
+                android:layout_margin="10dp"
+
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"
+                android:layout_width="320dp" />
+
+        <TextView
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:paddingBottom="0dp"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorControlNormal"
+            android:fontFamily="sans-serif-condensed" />
+
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgrp">
+
+            <RadioButton
+                android:textStyle="bold"
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rmale"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed" />
+
+            <RadioButton
+                android:textStyle="bold"
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rfemale"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-condensed" />
+        </RadioGroup>
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editstate"
+            android:hint="Select State"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editcity"
+            android:hint="Select City"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:maxLength="6"
+            android:id="@+id/editpin"
+            android:hint="Pincode"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="?attr/colorPrimary" />
+
+        <Spinner
+            android:textStyle="bold"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/selBG"
+            android:ems="10"
+            android:spinnerMode="dialog"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:minWidth="20dp"
+            android:textSize="20dp"/>
+
+
+    <EditText
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:maxLength="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editphone"
+        android:layout_width="330dp"
+        android:hint="Number"
+
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:minWidth="20dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:text="SUBMIT "
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="118dp"
+        android:id="@+id/SUBMIT"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="normal|bold" />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
